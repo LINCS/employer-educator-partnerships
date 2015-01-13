@@ -1,0 +1,594 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+**	Style properties for Global elements
+**
+*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #FFF;
+}
+
+.primaryWrapper {
+	min-height: 100%;
+	margin: 0 auto -72px;	/* bottom marg is negative value of height of footerBackground */
+}
+
+.push {
+	height: 72px;	/* matches height of footerBackground */
+}
+
+#banner {
+	background-color: #0B689A; 
+	color: #FFF;
+	width: 100%;
+	min-width: 1005px;
+	height: 104px;							/* height of header in mockup */	
+	border-top: 3px solid #CCC;
+	box-shadow: 0px 3px 5px 0px #888888;	/* ignored by older browsers */
+}
+
+#header {
+	width: 1000px; 
+	margin-left: auto;
+	margin-right: auto;
+/*	margin-top: 20px;	*/
+	margin-top: 15px;
+}
+
+#skiplink a  {
+	font-family: 'Spinnaker', sans-serif;
+	font-size: 10px; 
+	font-weight: 400;
+	position: absolute;
+	left: -9999px;  
+}
+
+#skiplink a:focus {
+	left: 10px;
+	color: #FFFFFF;
+} 
+
+#navWrapper {
+	width: 525px; 	
+	height: 32px;
+	margin: 3px auto 0px auto;		
+	background-color: #ECECE1;	
+	box-shadow: 0px 3px 5px 0px #888888;	/* ignored by older browsers */
+}
+
+#navMenu {
+	list-style: none;
+	margin: 0px;   
+	padding: 8px 0px 8px 0px;	
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;	
+}
+
+#navMenu > li {
+	float: left;
+/*	width: 70px;  */
+	margin-left: 20px; 		/* 15px; */
+	margin-right: 20px; 	/* 10px; */
+	text-align: center;
+	position: relative;				/* position of child elements are relative to this */
+}
+
+#navMenu li a:link, #navMenu li a:visited {
+	display: block;
+	text-decoration: none;
+	color: #0B689A;					/* dark blue */
+}
+
+#navMenu li a:hover {
+	color: #974901;					/* orange with brown tone */	
+/*	color: #FFB400; */				/* note: in mockup was more yellow: #FFDB89; might want to evaluate with color analyzer*/
+}
+
+#home #nav_home a,
+#contact #nav_contact a,
+#about #nav_about a {
+	color: #974901;					/* orange with brown tone */
+}
+ 
+#emp-stories #nav_emp_stories a,
+#emp-res #nav_emp_resources a,
+#educ-stories #nav_educ_stories a,
+#educ-res #nav_educ_resources a {
+	color: #FFB400; 				/* orange, but in mockup was more yellow: (#FFDB89;) */
+
+}
+
+#emp li:nth-child(3) a,
+#educ li:nth-child(4) a{
+	color: #974901;					/* orange with brown tone */
+}
+
+#navMenu ul {
+	position: absolute; 
+	background-color: #2D2D2F;
+	list-style: none;
+	border-style: none;
+	border: 1px solid #888;
+	padding: 0.5em;    
+	margin: 1em 0 0 -9999px;	/* ul moves off the screen */
+	width: 140px;
+	line-height: 2; /*1.8; */
+	text-align: center;
+}
+
+#navMenu ul a:link, #navMenu ul a:visited {
+	color: #B8BBC1;
+}
+
+#navMenu ul a:hover,
+#navMenu ul a:focus {
+	color: #FFB400; /* in mockup was more yellow: #FFDB89; */
+}
+
+#navMenu li:hover ul {
+	/* when user hovers over li, the ul within li moves back into view */
+	margin-left: -25px;
+}
+
+#textWrapper {
+	width: 1010px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	padding-left: 10px;
+}
+	
+#footerBackground {
+	clear: both;
+	background-color: #2D2D2F;
+	color: #B8BBC1;
+	width: 100%;
+	min-width: 960px;
+	height: 72px;							/* height of footer in mockup */	
+	border-top: 0px solid #2D2D2F;
+	border-bottom: 0px solid #2D2D2F;
+	padding-left: 10px;
+}
+
+#footerText {
+	width: 960px;
+	margin: 0px auto 0px auto;
+	padding-top: 10px;  
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;	
+	font-weight: 400;	
+}
+
+#disclaimer {
+	width: 780px;
+	float: left;
+	line-height: 1.3em;  
+}
+
+#social {
+	width: 160px;
+	float: right;
+}
+
+#social img.shareIcon {
+	vertical-align: middle;	
+	margin-left: 16px;
+	border: none;
+}
+
+#breadcrumbs {
+	width: 1010px;
+	margin: 20px auto 0px auto;
+	padding-left: 10px;	
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;	
+}
+
+#breadcrumbs a:link, 
+#breadcrumbs a:visited {
+	color: #0088CB;
+	text-decoration: none;
+}
+
+#breadcrumbs a:hover {
+	text-decoration: underline;
+}
+
+/*
+**	Style properties for Home page	
+**
+*/
+
+#home_sidebar {
+	width: 240px; 
+	float: left;
+}
+
+#home_intro {
+	margin-left: 247px;
+	border-left: 2px dotted #2D2D2F;
+	padding-left: 20px;
+	padding-bottom: 5px;
+}
+
+#home_sidebar_LinkBox {
+	background-color: #ECECE1;	
+	padding: 5px 15px 0px 15px;
+}
+
+#home_sidebar_LinkBox a:link, 
+#home_sidebar_LinkBox a:visited {
+	font-family: 'Signika', sans-serif;	
+	font-size: 13px;
+	font-weight: 400;
+	color: #0B689A;
+/*	color: #0088CB;	 color changed on 11/24 */	
+	text-decoration: none;
+}
+
+#home_sidebar_LinkBox a:hover { 
+	text-decoration: underline;
+}
+
+.home_sidebar_Heading {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	color: #404144;
+}
+
+.blueButton a:link, .blueButton a:visited {
+	display: block;  
+	width: 187px;
+	line-height: 32px;
+	background-color: #0B689A; 						/* differs somewhat from color used in mockup: #0088CB */
+	color: #FFDB89;
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.6);	/* ignored by older browsers */
+	text-align: center;  
+	text-decoration: none;  
+	font-family: 'Signika', sans-serif;	
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0px auto 0px auto;
+}
+
+.blueButton a:hover, .blueButton a:active {
+	background-color: #FFDB89;
+	color: #0B689A; 			
+}
+
+.home_photobar {
+	margin: 0px 0px 5px 0px;
+}
+
+img.home_singlePhoto {
+	margin: -2px;
+	border: none;
+}
+
+.callout_box {
+	width: 85%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000;
+	margin: 20px auto 6px auto;
+	padding: 5px 10px 7px 10px;
+	background-color: #ECECE1;	
+}
+
+li.bullet_blue {
+	color: #0088CB;
+}
+
+li.bullet_blue span {
+	color: #404144;
+}
+
+.story_text  {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: 400;  
+	line-height: 18px;
+	color: #404144;
+}
+
+.story_text ol,
+.story_text ul {
+	list-style-position: outside;
+	padding-left: 10px;
+	line-height: 1.5em;
+}
+
+/*
+** Style properties for About page
+**
+*/
+
+.about_text  {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: 400;  
+	line-height: 18px;
+	color: #404144;
+}
+
+.about_text ol,
+.about_text ul {
+	list-style-position: inside;
+	padding-left: 0px;
+}
+
+#clipboard {
+	height: 761px;
+	width: 507px;
+	background-repeat: no-repeat;
+	background-image: url('../images/Clipboard_notext.jpg');
+	margin: 20px auto 20px auto;
+	padding-top: 160px;
+	padding-left: 20px;
+}
+
+#clipboard ul {
+	list-style-type: none;
+	width: 450px;
+}
+
+#clipboard li {
+	display: block;
+	clear: both;
+}
+
+#clipboard a:link,
+#clipboard a:visited {
+	color: #404144;
+	font-weight: bold;	
+	text-decoration: none;
+}
+
+#clipboard a:hover {
+	text-decoration: underline;	
+}
+
+#checkMark {
+	background-image: url('../images/checkmark_20px.png');
+	width: 20px;
+	height: 20px;
+	float: left;  
+	margin-top: 5px;
+	margin-left: 20px;
+}
+
+#checkInfo {
+	width: 390px;
+	float: right;
+	padding-top: 2px;
+	padding-bottom: 3px;  
+	margin-left: 10px;
+	line-height: 1.5em;
+}
+
+#checkInfo span {
+	font-weight: 700;
+}
+
+#clipHeader {
+	width: 435px;
+	text-align: center;
+	margin-top: 14px;
+}
+
+/*
+**	Style properties for Employer/Educator pages
+**
+*/
+
+#emp-educ_main {	
+	width: 630px;
+	float: left;  
+	padding: 10px 25px 25px 0px;
+}
+
+#emp-educ_sidebar {
+	width: 295px;
+/*	margin-left: 657px;  */
+	float: right;
+	margin-right: 30px;
+	padding: 5px 1px 1px 5px; 
+}
+
+#emp-educ_sidebar_LinkBox {
+	margin-top: 15px;
+}
+
+#emp-educ_sidebar_LinkBox li {
+	margin-left: 55px;
+}
+
+.miniList {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	color: #404144;
+}
+
+.blueSpan {
+	color: #0088CB;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.brownSpan {
+	color: #974901;
+	font-weight: 700;
+}
+
+.partnership_heading {
+	font-family: 'Signika', sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 41.6px;
+	color: #404144;
+}
+
+.partnership_heading_blue {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	color: #0088CB;
+}
+
+.landing_text {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: 400;  
+	line-height: 18px;
+	color: #404144;
+}
+
+.landing_text ul {
+	list-style-position: outside;
+	padding-left: 10px;
+}
+
+.landing_text a:link, .landing_text a:visited {
+	text-decoration: none;
+	color: #0088CB;
+	font-size: 14px;	
+	font-weight: 700;
+	line-height: 18px;
+}
+
+.landing_text a:hover {
+	text-decoration: underline;
+}
+
+#bridge {
+	margin-left: 98px;
+}
+
+#bridge img {
+	width: 424px;
+	height: 75px;	
+}
+
+.title_text {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 18px;
+	font-weight: 700;  
+	line-height: 23px;
+	color: #404144;
+}
+
+.arrowButton a:link, .arrowButton a:visited {
+	width: 40px; 		/* 36px; */
+	height: 40px; 		/* 36px; */
+	display: block;  
+	background-repeat: no-repeat;  
+	background-image: url('../images/dark blue arrow.png');  
+	border: 0;
+}
+
+.arrowButton a:hover {
+	background-image: url('../images/light blue arrow.png');
+}
+
+.arrowButton a:active {
+	background-image: url('../images/black arrow.png');  
+}
+
+.resourceList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: 400;  
+	line-height: 16px;
+	color: #404144;
+}
+
+li.resourceList {
+	width: 100%;
+}
+
+.resourceList_Bold {
+	font-weight: 700;
+}
+
+#resourceTitle {
+	width: 85%;
+	padding: 5px 10px 0px 0px;  
+}
+
+#resourceAbstract {
+	width: 85%;
+	min-height: 40px;  
+	float: left;  
+}
+
+#resourceLink {
+	width: auto;
+	float: right;
+	margin-top: 1em;
+}
+
+#resourceFootnote {
+	clear: both;
+	display: block;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: 400;  
+	color: #404144;
+	padding-top: 20px;
+}
+
+#resourceFootnote span {
+	font-style: italic;
+}	
+
+hr {
+	clear: both;
+	display: block;
+	border-color: #FFB400;
+	border-bottom-width: 3px;  
+	border-style: solid;
+}
+
+/*
+**	Styles properties for Contact page 
+**
+*/
+
+#contactWrapper {
+	width: 630px;
+	padding: 10px 25px 25px 0px;
+	margin: auto;
+}
+
+#contactInfo {
+	display: block;
+	margin-left: 20%;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	font-weight: 400;  
+	line-height: 21px;
+	color: #404144;	 
+}
+
+.contactHeading {
+	font-family: 'Signika', sans-serif;	
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 35.2px;
+	color: #0088CB;	
+}
+
+.contactEmail a:link, .contactEmail a:visited {
+	color: #0088CB;	
+}

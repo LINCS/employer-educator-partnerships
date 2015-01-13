@@ -1,0 +1,147 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+Employer Engagement Toolkit
+</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href='http://fonts.googleapis.com/css?family=Signika|Spinnaker|Open+Sans' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href = "stylesheets/default.css" />
+</head>
+
+
+<body id = "home" >
+
+<div class = "primaryWrapper">
+
+	<div id = "banner">   
+    
+	    
+		<div id = "skiplink"><a href="#contentStart">Skip to Main Content</a></div>    
+       
+        <div id = "header">
+            <img src = "./images/EmpEngBanner.PNG" alt = "Tools for Building Employer-Educator Partnerships: forging collaborations for workforce development" />
+        </div>
+
+	</div>                 
+   
+    <div id = "navWrapper">
+		<ul id = "navMenu">
+    		<li id = "nav_home"><a href = "index.htm" onmouseover = "hideDropDown()" onfocus = "hideDropDown()">Home</a></li>
+       		<li id = "nav_about"><a href = "about.htm" onmouseover = "hideDropDown()" onfocus = "hideDropDown()">About</a></li>
+        	<li id = "nav_emp"><a href = "employers.htm" onmouseover = "showDropDown('subMenuEmployer')" onclick = "showDropDown('subMenuEmployer')" onfocus = "showDropDown('subMenuEmployer')">Tools for Employers</a>
+            
+            	<ul id = "subMenuEmployer" onmouseleave = "hideDropDown()">
+                	<li id = "nav_emp_stories"><a href = "employers-stories.htm">Employers' Stories</a></li>
+                    <li id = "nav_emp_resources"><a href = "employers-resources.htm" onfocus = "showDropDown('subMenuEmployer')">Employers' Resources</a></li>
+        		</ul>
+                
+			</li>                    
+			<li id = "nav_educ"><a href = "educators.htm" onmouseover = "showDropDown('subMenuEducator')" onclick = "showDropDown('subMenuEducator')" onfocus = "showDropDown('subMenuEducator')">Tools for Educators</a>
+            
+              	<ul id = "subMenuEducator" onmouseleave = "hideDropDown()">
+                 	<li id = "nav_educ_stories"><a href = "educators-stories.htm">Educators' Stories</a></li>
+                    <li id = "nav_educ_resources"><a href = "educators-resources.htm" onfocus = "showDropDown('subMenuEducator')">Educators' Resources</a></li>
+                </ul>
+                
+			</li>                    
+		    <li id = "nav_contact"><a href = "contact.htm" onmouseover = "hideDropDown()" onfocus = "hideDropDown()">Contact</a></li>
+    	</ul>
+	</div>    
+    
+<script type="text/javascript">
+function showDropDown(id) {
+	// hide both submenus
+	hideDropDown();
+	
+	// move specified submenu to left of parent menu
+    var submenu = document.getElementById(id);
+	submenu.style.marginLeft = "-25px"; 
+}
+
+function hideDropDown() {
+	// move both submenus off of screen
+	
+    var submenu = document.getElementById("subMenuEmployer");
+	submenu.style.marginLeft = "-99999px";
+    submenu = document.getElementById("subMenuEducator");
+	submenu.style.marginLeft = "-99999px";
+}
+
+</script>
+            
+
+
+
+
+
+
+
+
+	<div id = "textWrapper">
+    
+    	<a id = "contentStart"></a> 
+        
+    	<div id = "home_sidebar">
+        	<div class = "blueButton">
+				<a href = "employers.htm">Tools for Employers</a><br />
+				<a href = "educators.htm" >Tools for Educators</a><br />
+            </div>
+		    <div id = "home_sidebar_LinkBox">        
+    		    <p class = "home_sidebar_Heading">Links to Other Resources</p>                
+        	    <a href = "http://www2.ed.gov/about/offices/list/ovae/index.html?src=oc" target = "_blank">U.S. Department of Education Office of Career, Technical, and Adult Education</a><br /><br />
+            	<a href = "http://www.doleta.gov/" target = "_blank">U.S. Department of Labor Employment and Training Administration</a><br /><br />
+	            <a href = "http://lincs.ed.gov/" target = "_blank">Literacy Information and Communication System (LINCS)</a><br /><br />                        
+    	    </div>
+		</div>     
+		
+        <div id = "home_intro">
+        	<div class = "home_photobar">
+                <img src = "./photos/home_worker_31153464.jpg" class = "home_singlePhoto" alt = "Worker in store room"/>            
+            	<img src = "./photos/home_training_13716042.jpg" class = "home_singlePhoto" alt = "Teacher and two students"/>
+                <img src = "./photos/home_foreman_3887989.jpg"  class = "home_singlePhoto" alt = "Construction foreman"/>
+            </div>
+            <div class = "story_text">
+				<p>America needs an effective strategy for integrating educational instruction and workforce development that benefits employers, today's workers, and workers of tomorrow. <span style = "font-weight: bold">Employer-Educator Partnerships work!</span>
+			    </p>    
+                <p><span class = "blueSpan">This website is designed to:</span>
+                </p>
+                <ul>
+                	<li>Introduce employers and educators to the value of partnering.</li>
+                    <li>Describe best practices and success stories.</li>
+                	<li>Disseminate evidence-based tools that contain academic and practical solutions for building partnerships, sustaining collaborations, and creating career pathways.</li>
+                </ul>                
+                <p>Valuable information tailored for both employers and educators is presented. Whether you are an employer, educator, or other interested party, we encourage you to view both sections as they present examples, from each perspective, of how partnerships have made a difference along with links to important resources.
+                </p>
+                <div class = "callout_box">
+Lower-skilled workers make up a significant part of today's labor force; low literacy and numeracy are also a problem for many unemployed adults. These individuals are traditionally underserved by training programs. Low-wage, entry-level jobs should not be dead ends&#8212;they should be stepping stones to more productive employment.         
+                </div>
+            </div>
+        </div>
+	</div>
+    
+
+
+    	<div class = "push"></div>
+	</div>
+
+	<div id = "footerBackground">
+		<div id = "footerText">
+    		<div id = "disclaimer">
+This website was developed by NOVA Research Company with assistance from Quotient Inc. and funding from the U.S. Department of Education (ED), Office of Career, Technical, and Adult Education (OCTAE), under Contract No. ED-VAE-14-O-5014. The opinions expressed herein do not necessarily represent the positions or policies of the U.S. Department of Education, and no official endorsement by the U.S. Department of Education should be inferred.
+		    </div>
+    	    <div id = "social">
+	    	FOLLOW US:
+            <a href = "https://www.facebook.com/SecretaryArneDuncan" title = "Like Employer Engagement on Facebook" target = "_blank">
+            <img src = "./images/FB-f-Logo__blue_29.png" alt = "Like Employer Engagement on Facebook" class = "shareIcon" /></a>
+            <a href = "https://twitter.com/usedgov" title = "Follow Employer Engagement on Twitter" target = "_blank">
+            <img src = "./images/Twitter_logo_white_16.png" alt = "Follow Employer Engagement on Twitter" class = "shareIcon" /></a>
+	    	</div>
+		</div>        
+	</div>
+
+</body>
+</html> 
