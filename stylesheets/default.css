@@ -485,22 +485,30 @@ li.bullet_blue span {
 	color: #404144;
 }
 
-.arrowButton a:link, .arrowButton a:visited {
-	width: 40px; 		/* 36px; */
-	height: 40px; 		/* 36px; */
-	display: block;  
-	background-repeat: no-repeat;  
-	background-image: url('../images/dark blue arrow.png');  
+.arrowButton {
+	width: 40px; 
+	height: 40px;
+/*	display: block;  	*/
+	border: 0;	
+}
+
+#tooltip {
+  position:absolute;
+  border:1px solid #333;
+  background:#f7f5d1;
+  padding:2px 5px;
+  color:#333;
+  display:none;
+}   
+
+.arrowDark {
 	border: 0;
 }
 
-.arrowButton a:hover {
-	background-image: url('../images/light blue arrow.png');
-}
-
-.arrowButton a:active {
-	background-image: url('../images/black arrow.png');  
-}
+.arrowLight {
+	 display: none;
+	 border: 0;
+} 
 
 .resourceList {
 	list-style: none;
@@ -521,18 +529,18 @@ li.resourceList {
 	font-weight: 700;
 }
 
-#resourceTitle {
+.resourceTitle {
 	width: 85%;
 	padding: 5px 10px 0px 0px;  
 }
 
-#resourceAbstract {
+.resourceAbstract {
 	width: 85%;
 	min-height: 40px;  
 	float: left;  
 }
 
-#resourceLink {
+.resourceLink {
 	width: auto;
 	float: right;
 	margin-top: 1em;

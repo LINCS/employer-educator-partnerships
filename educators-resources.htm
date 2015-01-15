@@ -51,6 +51,11 @@ Employer Engagement Toolkit: Educators' resources
 		    <li id = "nav_contact"><a href = "contact.htm" onmouseover = "hideDropDown()" onfocus = "hideDropDown()">Contact</a></li>
     	</ul>
 	</div>    
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
+
+<script src = "scripts/showHideTooltip.js">
+</script>
     
 <script type="text/javascript">
 function showDropDown(id) {
@@ -103,62 +108,77 @@ function hideDropDown() {
                 
                	<ul class = "resourceList">
                 	<li>
-                       		<div id = "resourceTitle">
+                       		<div class = "resourceTitle">
                           	<span class = "title_text">The First Year of Accelerating Opportunity: Implementation Findings from States and Colleges, Urban Institute (September 2014)</span>                    
                             </div>
-    	                	<div id = "resourceAbstract">
+    	                	<div class = "resourceAbstract">
 	    		        	    <p>This report is part of the Urban Institute's evaluation of the Accelerating Opportunity initiative, a program to help adults with low basic skills obtain career and technical education toward marketable career credentials.</p>
             	            </div>
-                	        <div id = "resourceLink" class = "arrowButton">
-    	            	            <a href = "http://www.urban.org/UploadedPDF/413238-The-First-Year-of-Accelerating-Opportunity.pdf" target = "_blank" title = "Link to resource (PDF)"></a>
+                	        <div class = "resourceLink arrowButton">
+    	            	            <a href = "http://www.urban.org/UploadedPDF/413238-The-First-Year-of-Accelerating-Opportunity.pdf" id = "educResLink1" target = "_blank" data-tooltip="Link to external resource (PDF)">
+                                    <img src = "./images/dark blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowDark">
+                                    <img src = "./images/light blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowLight">                                
+                                    </a>
                         	</div>
                             <hr />                        
                     </li>
                     <li>
-                       		<div id = "resourceTitle">                    
+                       		<div class = "resourceTitle">                    
 		                    <span class = "title_text">Wisconsin Department of Workforce Development Strategic Plan, State of Wisconsin (July 2013)</span>                    
                             </div>
-    	                     <div id = "resourceAbstract">            
+    	                     <div class = "resourceAbstract">            
                                 <p>This plan outlines the state's goals, with identified metrics to track progress toward each goal. Within the metrics are strategic drivers, which are specific program activities that reinforce the goals of the strategic plan. The guide provides an overview of the Department's strategic plans for the next biennium.</p>        
             	             </div>
-                	         <div id = "resourceLink" class = "arrowButton">
-    	            	            <a href = "http://dwd.wisconsin.gov/strategic_plan/pdf/strategic_plan_2013.pdf" target = "_blank" title = "Link to resource (PDF)"></a>
+                	         <div class = "resourceLink arrowButton">
+    	            	            <a href = "http://dwd.wisconsin.gov/strategic_plan/pdf/strategic_plan_2013.pdf" id = "educResLink2" target = "_blank" data-tooltip="Link to external resource (PDF)">
+                                    <img src = "./images/dark blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowDark">
+                                    <img src = "./images/light blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowLight">
+                                    </a>
                         	 </div>
   		                     <hr />                                                         
                     </li>
                     <li>
-                       		<div id = "resourceTitle">                    
+                       		<div class = "resourceTitle">                    
                            	<span class = "title_text">Engaging Employers to Support Adult Career Pathway Programs, David Bond, Ed.D. (March 2013)</span>                    
                             </div>
-   	                        <div id = "resourceAbstract">
+   	                        <div class = "resourceAbstract">
                                 <p>This issue brief discusses employer engagement in Adult Career Pathways programs and how it can strengthen the efforts of adult educators to help learners attain secondary credentials, transition to postsecondary programs, achieve industry credentials, and secure family-sustaining employment.</p>
            	                </div>
-               	            <div id = "resourceLink" class = "arrowButton">
-    	            	            <a href = "http://www.adultcareerpathways.org/Policy_Brief_Engaging_Employers.pdf " target = "_blank" title = "Link to resource (PDF)"></a>
+               	            <div class = "resourceLink arrowButton">
+    	            	            <a href = "http://www.adultcareerpathways.org/Policy_Brief_Engaging_Employers.pdf " id = "educResLink3" target = "_blank" data-tooltip="Link to external resource (PDF)">
+                                    <img src = "./images/dark blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowDark">
+                                    <img src = "./images/light blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowLight">                                    
+                                    </a>
                        	    </div>
                             <hr />                        
                     </li>
                     <li>
-                       		<div id = "resourceTitle">                    
+                       		<div class = "resourceTitle">                    
                             	<span class = "title_text">Strategic Employer Engagement: Building Dynamic Relationships with Employers in Teen &amp; Young Adult Employment Programs: A Workforce Development Practitioner's Guide, Commonwealth Corporation (2013)</span>                    
 							</div>                                
-   	                        <div id = "resourceAbstract">
+   	                        <div class = "resourceAbstract">
                                 <p>This guide is designed around a strategic employer engagement model to help workforce development professionals in their efforts to increase the number and quality of training and employment experiences available to teens and young adults&#8212;a segment of the population that often struggles to find its place in the work world.</p>
            	                </div>
-               	            <div id = "resourceLink" class = "arrowButton">
-    	            	            <a href = "http://commcorp.org/resources/documents/Employer%20Engagement%20Guide%2004.2013.pdf" target = "_blank" title = "Link to resource (PDF)"></a>
+               	            <div class = "resourceLink arrowButton">
+    	            	            <a href = "http://commcorp.org/resources/documents/Employer%20Engagement%20Guide%2004.2013.pdf" id = "educResLink4" target = "_blank" data-tooltip="Link to external resource (PDF)">
+                                    <img src = "./images/dark blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowDark">
+                                    <img src = "./images/light blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowLight">                                    
+                                    </a>
                        	    </div>
 						    <hr />                                                    
                     </li>
                     <li>
-                       		<div id = "resourceTitle">                    
+                       		<div class = "resourceTitle">                    
                            	<span class = "title_text">Partnering with Employers to Promote Job Advancement for Low-Skill Individuals, Urban Institute (September 2010)</span>
                             </div>
-   	                        <div id = "resourceAbstract">
+   	                        <div class = "resourceAbstract">
                                 <p>This paper explores the reasons why employer partnerships are important for improving economic outcomes for both low-skill workers and businesses. It identifies the factors that have hindered the growth of these partnerships as well as promising approaches&#8212;incumbent worker training and sectoral training&#8212;to build partnerships. It concludes with a discussion of policy considerations for creating and sustaining partnerships with employers to provide skill development opportunities.</p>
            	                </div>
-               	            <div id = "resourceLink" class = "arrowButton">
-    	            	            <a href = "http://www.urban.org/uploadedpdf/412309-Promote-Job-Advancement.pdf" target = "_blank" title = "Link to resource (PDF)"></a>
+               	            <div class = "resourceLink arrowButton">
+    	            	            <a href = "http://www.urban.org/uploadedpdf/412309-Promote-Job-Advancement.pdf" id = "educResLink5" target = "_blank" data-tooltip="Link to external resource (PDF)">
+                                    <img src = "./images/dark blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowDark">
+                                    <img src = "./images/light blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowLight">                                    
+                                    </a>
                        	    </div>
                     </li>
 

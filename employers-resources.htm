@@ -51,6 +51,11 @@ Employer Engagement Toolkit: Employers' Resources
 		    <li id = "nav_contact"><a href = "contact.htm" onmouseover = "hideDropDown()" onfocus = "hideDropDown()">Contact</a></li>
     	</ul>
 	</div>    
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
+
+<script src = "scripts/showHideTooltip.js">
+</script>
     
 <script type="text/javascript">
 function showDropDown(id) {
@@ -72,6 +77,7 @@ function hideDropDown() {
 }
 
 </script>
+
             
 
 
@@ -103,63 +109,78 @@ function hideDropDown() {
                 
                	<ul class = "resourceList">
                 	<li>
-                    		<div id = "resourceTitle">
+                    		<div class = "resourceTitle">
 	                           	<span class = "title_text">A Toolkit for Maine Employers: Implementing Workforce Supports to Encourage Employee Training and Education, Maine Development Foundation</span>
                             </div>
-    	                	<div id = "resourceAbstract">
+    	                	<div class = "resourceAbstract">
 	    		        	    <p>This toolkit provides information, resources and ideas to assist organizations that want to take steps to support employee education and training. </p>
             	            </div>
-                	        <div id = "resourceLink" class = "arrowButton">
-    	            	            <a href = "http://www.adultcollegecompletion.org/sites/files/documents/maineEmpToolkit.pdf" target = "_blank" title = "Link to resource (PDF)"></a>
+                	        <div class = "resourceLink arrowButton">
+    	            	            <a href = "http://www.adultcollegecompletion.org/sites/files/documents/maineEmpToolkit.pdf" id = "empResLink1" target = "_blank" data-tooltip="Link to external resource (PDF)">
+                                    <img src = "./images/dark blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowDark">
+                                    <img src = "./images/light blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowLight">
+                                    </a>                                    
                         	</div>
                             <hr />                        
                     </li>
                     <li>
-                    		<div id = "resourceTitle">                    
+                    		<div class = "resourceTitle">                    
 	                             <span class = "title_text">Connecting Youth &amp; Business. A Toolkit for Employers, Gap Inc., (2012) </span>
                             </div>     
-	   	                    <div id = "resourceAbstract">    
+	   	                    <div class = "resourceAbstract">    
                                 <p>The toolkit was created to guide employers, step-by-step, on working with opportunity youth, with the goals of 1) helping youth find pathways that will lead to productive adulthoods; 2) creating benefits to the businesses that engage opportunity youth; and 3) improving community outcomes which can lead to decreasing the financial burden now experienced by the American taxpayer and the United States.</p>        
             	            </div>
-                	        <div id = "resourceLink" class = "arrowButton">
-    	            	            <a href = "http://www.gapinc.com/content/dam/csr/documents/YETk_1.0_Final_Print.pdf" target = "_blank" title = "Link to resource (PDF)"></a>
+                	        <div class = "resourceLink arrowButton">
+    	            	            <a href = "http://www.gapinc.com/content/dam/csr/documents/YETk_1.0_Final_Print.pdf" id = "empResLink2" target = "_blank" data-tooltip="Link to external resource (PDF)">
+                                    <img src = "./images/dark blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowDark">
+                                    <img src = "./images/light blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowLight">
+                                    </a>                                    
                         	</div>
   		                    <hr />                                                         
                     </li>
                     <li>
-                    		<div id = "resourceTitle">                                        
+                    		<div class = "resourceTitle">                                        
 	                          	<span class = "title_text">A Resource Guide for Community Action Agencies and Other Community-Based Organizations in Massachusetts, The Massachusetts Association for Community Action (MASSCAP), (November 2004)</span>
 							</div>                                
-   	                        <div id = "resourceAbstract">
+   	                        <div class = "resourceAbstract">
                                 <p>The purpose of this guide is to provide a vision to assist with designing workforce development strategies and programs. It offers technical assistance information and promising practices gleaned from reviews of other organizations, summative reports and evaluations, and our own survey of Community Action Agencies (CAAs) and other community-based organizations (CBOs).
                                 </p>
            	                </div>
-               	            <div id = "resourceLink" class = "arrowButton">
-    	            	            <a href = "http://www.masscap.org/pdfs/WFDguide.pdf" target = "_blank" title = "Link to resource (PDF)"></a>
+               	            <div class = "resourceLink arrowButton">
+    	            	            <a href = "http://www.masscap.org/pdfs/WFDguide.pdf" id = "empResLink3" target = "_blank" data-tooltip="Link to external resource (PDF)">
+                                    <img src = "./images/dark blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowDark">
+                                    <img src = "./images/light blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowLight">                                    
+                                    </a>
                        	    </div>
   		                    <hr />                                                                                     
                     </li>
                     <li>
-                    		<div id = "resourceTitle">                                        
+                    		<div class = "resourceTitle">                                        
 	                          	<span class = "title_text">Gain Buy In, Grads of Life (2014)</span>
 							</div>                                
-   	                        <div id = "resourceAbstract">
+   	                        <div class = "resourceAbstract">
                                 <p>This guide will help you understand the key messages to effectively pitch an employment pathway effort within your organization. Walk through key steps for developing a business case that meets your company needs.</p>
            	                </div>
-               	            <div id = "resourceLink" class = "arrowButton">
-    	            	            <a href = "http://gradsoflife.org/wp-content/uploads/2014/09/Gain-Company-Buy-in-Guide.pdf" target = "_blank" title = "Link to resource (PDF)"></a>
+               	            <div class = "resourceLink arrowButton">
+    	            	            <a href = "http://gradsoflife.org/wp-content/uploads/2014/09/Gain-Company-Buy-in-Guide.pdf" id = "empResLink4" target = "_blank" data-tooltip="Link to external resource (PDF)">
+	                                <img src = "./images/dark blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowDark">
+                                    <img src = "./images/light blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowLight">
+                                    </a>
                        	    </div>
   		                    <hr />                                                                                     
                     </li>
                     <li>
-                    		<div id = "resourceTitle">                                        
+                    		<div class = "resourceTitle">                                        
 	                          	<span class = "title_text">Why Companies Invest in &#034;Grow Your Own&#034; Talent Development Models: Including a Tool for Calculating Return on Workforce Readiness Programs, Corporate Voices for Working Families (2011)</span>
 							</div>                                
-   	                        <div id = "resourceAbstract">
+   	                        <div class = "resourceAbstract">
                                 <p>This report (1) documents examples of companies that are making these investments and explores the business rationale for doing so; (2) calculates the return on investment (ROI) that the firms derive as a result of their workforce readiness programs; and (3) delineates the broader economic and social argument for employer engagement in workforce readiness programs.</p>
            	                </div>
-               	            <div id = "resourceLink" class = "arrowButton">
-    	            	            <a href = "http://gradsoflife.org/wp-content/uploads/2014/09/Why-Companies-Invest-in-Grow-Your-Own-Talent-Models.pdf" target = "_blank" title = "Link to resource (PDF)"></a>
+               	            <div class = "resourceLink arrowButton">
+    	            	            <a href = "http://gradsoflife.org/wp-content/uploads/2014/09/Why-Companies-Invest-in-Grow-Your-Own-Talent-Models.pdf" id = "empResLink5" target = "_blank" data-tooltip="Link to external resource (PDF)">
+                                    <img src = "./images/dark blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowDark">
+                                    <img src = "./images/light blue arrow.png" alt = "Link to external resource (PDF)" class = "arrowLight">
+                                    </a>
                        	    </div>
                     </li>
 				</ul>
