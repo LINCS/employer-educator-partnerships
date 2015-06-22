@@ -1,0 +1,157 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+Employer Engagement Toolkit: Success Story Submission
+</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href='http://fonts.googleapis.com/css?family=Signika|Spinnaker|Open+Sans' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href = "stylesheets/default.css" />
+</head>
+
+
+<body id = "contact" >
+
+<div class = "primaryWrapper">
+
+	<div id = "banner">   
+    
+	    
+		<div id = "skiplink"><a href="#contentStart">Skip to Main Content</a></div>    
+       
+        <div id = "header">
+            <img src = "./images/EmpEngBanner.PNG" alt = "Tools for Building Employer-Educator Partnerships: forging collaborations for workforce development" />
+        </div>
+
+	</div>                 
+   
+    <div id = "navWrapper">
+		<ul id = "navMenu">
+    		<li id = "nav_home"><a href = "index.htm" onmouseover = "hideDropDown()" onfocus = "hideDropDown()">Home</a></li>
+       		<li id = "nav_about"><a href = "about.htm" onmouseover = "hideDropDown()" onfocus = "hideDropDown()">About</a></li>
+        	<li id = "nav_emp"><a href = "employers.htm" onmouseover = "showDropDown('subMenuEmployer')" onclick = "showDropDown('subMenuEmployer')" onfocus = "showDropDown('subMenuEmployer')">Tools for Employers</a>
+            
+            	<ul id = "subMenuEmployer" onmouseleave = "hideDropDown()">
+                	<li id = "nav_emp_stories"><a href = "employers-stories.htm">Employers' Stories</a></li>
+                    <li id = "nav_emp_resources"><a href = "employers-resources.htm" onfocus = "showDropDown('subMenuEmployer')">Employers' Resources</a></li>
+        		</ul>
+                
+			</li>                    
+			<li id = "nav_educ"><a href = "educators.htm" onmouseover = "showDropDown('subMenuEducator')" onclick = "showDropDown('subMenuEducator')" onfocus = "showDropDown('subMenuEducator')">Tools for Educators</a>
+            
+              	<ul id = "subMenuEducator" onmouseleave = "hideDropDown()">
+                 	<li id = "nav_educ_stories"><a href = "educators-stories.htm">Educators' Stories</a></li>
+                    <li id = "nav_educ_resources"><a href = "educators-resources.htm" onfocus = "showDropDown('subMenuEducator')">Educators' Resources</a></li>
+                </ul>
+                
+			</li>                    
+		    <li id = "nav_contact"><a href = "contact.htm" onmouseover = "hideDropDown()" onfocus = "hideDropDown()">Contact</a></li>
+    	</ul>
+	</div>    
+    
+<script type="text/javascript">
+function showDropDown(id) {
+	// hide both submenus
+	hideDropDown();
+	
+	// move specified submenu to left of parent menu
+    var submenu = document.getElementById(id);
+	submenu.style.marginLeft = "-25px"; 
+}
+
+function hideDropDown() {
+	// move both submenus off of screen
+	
+    var submenu = document.getElementById("subMenuEmployer");
+	submenu.style.marginLeft = "-99999px";
+    submenu = document.getElementById("subMenuEducator");
+	submenu.style.marginLeft = "-99999px";
+}
+
+function createBreadCrumbs() {
+	var bread = document.getElementById("breadcrumbs");
+	var pages = document.referrer.split("/");
+	var last = pages.length - 1;
+	var anchor1 = document.getElementById("crumbs_tools");	
+	var	anchor2 = document.getElementById("crumbs_stories");	
+	
+	if (pages[last] === "educators-stories.htm") {
+		// educators trail
+		anchor1.innerHTML = "Tools for Educators";
+		anchor1.setAttribute("href", "educators.htm");		
+
+		anchor2.innerHTML = "Educators' Stories";
+		anchor2.setAttribute("href", "educators-stories.htm");				
+	}
+	else {
+		// employers trail
+		anchor1.innerHTML = "Tools for Employers";
+		anchor1.setAttribute("href", "employers.htm");		
+
+		anchor2.innerHTML = "Employers' Stories";
+		anchor2.setAttribute("href", "employers-stories.htm");				
+	}	
+}
+window.onload = createBreadCrumbs;
+
+</script>
+            
+
+
+
+
+
+
+
+
+   	<div id = "breadcrumbs">
+   		<a href = "index.htm">Home</a>   &gt;   <a id = "crumbs_tools" href = "tools.htm">Tools</a>   &gt;   <a id = "crumbs_stories" href = "stories.htm">Stories</a> &gt; Success Story Submission<br />            
+    </div>        
+    
+	<div id = "textWrapper">
+    	
+        <a id = "contentStart"></a> 
+		<div class = "about_text">
+        	<p style = "text-align: center;">
+        		<span style = "font-weight: bold;">Success Story Submission</span>
+            </p>
+            <p>We welcome the submission of additional stories of success to complement those on the Employer Engagement Toolkit website. To submit an employer story or educator story for consideration, please send us a description of the story's Purpose, About the Program, and Impact (see format of currently posted stories) and a link to the detailed story.
+            </p>
+            <p>To be considered for inclusion on the site, the story should:
+            </p>
+            <ul>
+               	<li>Provide insight into the process by which successful partnerships have designed their programs and achieved their goals.</li>
+                <li>Convey a positive message about employer/educator partnerships.</li>
+               	<li>Have taken place within the last 5 years.</li>
+                <li>Link to additional information (e.g., web-based article, video, etc.).</li>                    
+			    <li>Be available at no cost.</li>                                    
+            </ul>
+            <p>If your story meets these criteria, please <a href = "mailto:employers@ed.gov?subject=Employer Engagement Toolkit: Success Story Submission" target = "_top">email</a> the description (and the link to additional information) to us and we will review it for addition to our site.
+            </p>
+        </div>
+	</div>   
+
+
+    	<div class = "push"></div>
+	</div>
+
+	<div id = "footerBackground">
+		<div id = "footerText">
+    		<div id = "disclaimer">
+This website was developed by NOVA Research Company with assistance from Quotient Inc. and funding from the U.S. Department of Education (ED), Office of Career, Technical, and Adult Education (OCTAE), under Contract No. ED-VAE-14-O-5014. The opinions expressed herein do not necessarily represent the positions or policies of the U.S. Department of Education, and no official endorsement by the U.S. Department of Education should be inferred.
+		    </div>
+    	    <div id = "social">
+	    	FOLLOW US:
+            <a href = "https://www.facebook.com/SecretaryArneDuncan" title = "Like Employer Engagement on Facebook" target = "_blank">
+            <img src = "./images/FB-f-Logo__blue_29.png" alt = "Like Employer Engagement on Facebook" class = "shareIcon" /></a>
+            <a href = "https://twitter.com/usedgov" title = "Follow Employer Engagement on Twitter" target = "_blank">
+            <img src = "./images/Twitter_logo_white_16.png" alt = "Follow Employer Engagement on Twitter" class = "shareIcon" /></a>
+	    	</div>
+		</div>        
+	</div>
+
+</body>
+</html> 
