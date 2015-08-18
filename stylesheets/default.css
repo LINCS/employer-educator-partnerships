@@ -521,7 +521,7 @@ li.bullet_blue span {
 	color: #404144;
 }
 
-li.resourceList {
+.resourceList li {
 	width: 100%;
 }
 
@@ -544,6 +544,17 @@ li.resourceList {
 	width: auto;
 	float: right;
 	margin-top: 1em;
+}
+
+img.resourceNew {
+	width: 53px;
+	height: 40px;
+	float: left;  
+	margin-top: 5px;
+	margin-bottom: 33px;
+/*	width: 53px;
+	height: 53px;	
+	margin-top: 25px;  */
 }
 
 #resourceFootnote {
